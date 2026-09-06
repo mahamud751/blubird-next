@@ -1,0 +1,65 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id          Int         @id @default(autoincrement())
+  sku         String      @unique @db.VarChar(64)
+  name        String      @db.VarChar(200)
+  description String      @default("") @db.Text
+  category    String      @default("general") @db.VarChar(80)
+  priceCents  Int         @map("price_cents")
+  currency    String      @default("USD") @db.Char(3)
+  stock       Int         @default(0)
+  attributes  Json        @default("{}")
+  imageUrl    String      @default("") @map("image_url") @db.VarChar(300)
+  archived    Boolean     @default(false)
+  createdAt   DateTime    @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt   DateTime    @updatedAt @map("updated_at") @db.Timestamptz(6)
+  orderItems  OrderItem[]
+
+  @@map("products")
+}
+
+model Customer {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique @db.VarChar(254)
+  name      String   @db.VarChar(120)
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  orders    Order[]
+
+  @@map("customers")
+}
+
+model Order {
+  id         Int         @id @default(autoincrement())
+  customerId Int         @map("customer_id")
+  status     String      @default("placed") @db.VarChar(24)
+  totalCents Int         @default(0) @map("total_cents")
+  currency   String      @default("USD") @db.Char(3)
+  notes      String      @default("") @db.Text
+  createdAt  DateTime    @default(now()) @map("created_at") @db.Timestamptz(6)
+  customer   Customer    @relation(fields: [customerId], references: [id])
+  items      OrderItem[]
+
+  @@map("orders")
+}
+
+model OrderItem {
+  id             Int     @id @default(autoincrement())
+  orderId        Int     @map("order_id")
+  productId      Int     @map("product_id")
+  sku            String  @db.VarChar(64)
+  name           String  @db.VarChar(200)
+  quantity       Int
+  unitPriceCents Int     @map("unit_price_cents")
+  order          Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product        Product @relation(fields: [productId], references: [id])
+
+  @@map("order_items")
+}

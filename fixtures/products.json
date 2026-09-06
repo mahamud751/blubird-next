@@ -1,0 +1,184 @@
+[
+  {
+    "sku": "NMB-ANC-01",
+    "name": "Nimbus ANC Headphones",
+    "description": "Closed-back wireless headphones with hybrid active noise cancelling, 30-hour battery, and a fold-flat travel case. Tuned for speech and long listening sessions, not bass-heavy EDM. USB-C charging, 3.5 mm cable in the box.",
+    "category": "audio",
+    "price_cents": 18900,
+    "currency": "USD",
+    "stock": 24,
+    "attributes": {
+      "color": "graphite",
+      "wireless": true,
+      "anc": true,
+      "weight_g": 254
+    },
+    "image_url": "/static/products/nmb-anc-01.jpg"
+  },
+  {
+    "sku": "HBR-TOTE-CV",
+    "name": "Harbor Canvas Tote",
+    "description": "16 oz waxed canvas tote with a wide base, interior zip pocket, and leather handles that soften with use. Holds a 15-inch laptop in a padded sleeve. Unlined so it dries quickly after rain.",
+    "category": "bags",
+    "price_cents": 4200,
+    "currency": "USD",
+    "stock": 40,
+    "attributes": {
+      "color": "olive",
+      "volume_l": 18,
+      "laptop_sleeve": true
+    },
+    "image_url": "/static/products/hbr-tote-cv.jpg"
+  },
+  {
+    "sku": "KLN-KTL-07",
+    "name": "Kiln Gooseneck Kettle",
+    "description": "700 ml stainless gooseneck kettle for pour-over. Temperature-marked lid, stay-cool handle, and a slow, even pour. Not electric \u2014 designed for a gas or induction hob.",
+    "category": "kitchen",
+    "price_cents": 6400,
+    "currency": "USD",
+    "stock": 15,
+    "attributes": {
+      "capacity_ml": 700,
+      "material": "stainless steel",
+      "electric": false
+    },
+    "image_url": "/static/products/kln-ktl-07.jpg"
+  },
+  {
+    "sku": "DYB-TEE-MR",
+    "name": "Daybreak Merino Tee",
+    "description": "Lightweight 160 gsm merino crewneck. Odor-resistant, temperature-regulating, and cut with a slightly relaxed shoulder. Not a compression shirt. Hand wash or gentle cycle.",
+    "category": "apparel",
+    "price_cents": 5800,
+    "currency": "USD",
+    "stock": 32,
+    "attributes": {
+      "material": "merino wool",
+      "weight_gsm": 160,
+      "fit": "relaxed"
+    },
+    "image_url": "/static/products/dyb-tee-mr.jpg"
+  },
+  {
+    "sku": "FLD-LMP-DSK",
+    "name": "Field Notes Desk Lamp",
+    "description": "Articulated brass-and-oak desk lamp with a warm 2700 K LED. Rotary dimmer on the base. USB-C powered, no battery. Shade tilts independently of the arm.",
+    "category": "home",
+    "price_cents": 7900,
+    "currency": "USD",
+    "stock": 18,
+    "attributes": {
+      "color_temp_k": 2700,
+      "power": "USB-C",
+      "dimmable": true
+    },
+    "image_url": "/static/products/fld-lmp-dsk.jpg"
+  },
+  {
+    "sku": "DRF-SOX-3P",
+    "name": "Drift Running Socks 3-pack",
+    "description": "Cushioned crew socks with a blister-guard heel and reinforced toe. Three pairs: slate, sand, and rust. Not compression socks. Machine wash cold.",
+    "category": "apparel",
+    "price_cents": 2200,
+    "currency": "USD",
+    "stock": 60,
+    "attributes": {
+      "pairs": 3,
+      "height": "crew",
+      "cushioning": "medium"
+    },
+    "image_url": "/static/products/drf-sox-3p.jpg"
+  },
+  {
+    "sku": "CDR-WLT-TR",
+    "name": "Cedar Travel Wallet",
+    "description": "Full-grain leather travel wallet with a passport slot, four card sleeves, and a zip coin pocket. Fits EU and US passports. No RFID lining \u2014 keep it simple.",
+    "category": "accessories",
+    "price_cents": 3600,
+    "currency": "USD",
+    "stock": 22,
+    "attributes": {
+      "material": "full-grain leather",
+      "rfid": false,
+      "passport": true
+    },
+    "image_url": "/static/products/cdr-wlt-tr.jpg"
+  },
+  {
+    "sku": "LMN-HUB-7P",
+    "name": "Lumen USB-C Hub 7-port",
+    "description": "Aluminum 7-port hub: HDMI 4K60, two USB-A 3.1, two USB-C, SD, and 100 W passthrough. Does not charge a laptop on its own without a power adapter on the passthrough port.",
+    "category": "electronics",
+    "price_cents": 4900,
+    "currency": "USD",
+    "stock": 28,
+    "attributes": {
+      "ports": 7,
+      "hdmi": "4K60",
+      "passthrough_w": 100
+    },
+    "image_url": "/static/products/lmn-hub-7p.jpg"
+  },
+  {
+    "sku": "QRY-MUG-ST",
+    "name": "Quarry Stone Mug",
+    "description": "350 ml speckled stoneware mug, dishwasher safe, slightly irregular rim from the kiln. Not microwave-safe because of the iron speckle. Sold individually.",
+    "category": "kitchen",
+    "price_cents": 1800,
+    "currency": "USD",
+    "stock": 50,
+    "attributes": {
+      "capacity_ml": 350,
+      "dishwasher": true,
+      "microwave": false
+    },
+    "image_url": "/static/products/qry-mug-st.jpg"
+  },
+  {
+    "sku": "ALP-RAIN-PK",
+    "name": "Alpine Packable Rain Shell",
+    "description": "2.5-layer waterproof shell that stuffs into its own chest pocket. Fully taped seams, two-way zipper, no insulation. Not windproof enough for alpine winter \u2014 it is a rain jacket.",
+    "category": "apparel",
+    "price_cents": 12900,
+    "currency": "USD",
+    "stock": 12,
+    "attributes": {
+      "waterproof": true,
+      "insulated": false,
+      "packable": true
+    },
+    "image_url": "/static/products/alp-rain-pk.jpg"
+  },
+  {
+    "sku": "EMB-FP-1L",
+    "name": "Ember French Press 1L",
+    "description": "Borosilicate French press with a fine mesh filter and a heat-retaining sleeve. Makes four mugs. Not for stovetop use. Replacement filters sold separately.",
+    "category": "kitchen",
+    "price_cents": 4500,
+    "currency": "USD",
+    "stock": 20,
+    "attributes": {
+      "capacity_ml": 1000,
+      "stovetop": false,
+      "filter": "mesh"
+    },
+    "image_url": "/static/products/emb-fp-1l.jpg"
+  },
+  {
+    "sku": "FLO-NTB-A5",
+    "name": "Folio Lined Notebook A5",
+    "description": "A5 notebook, 96 pages of 90 gsm cream paper, thread-bound so it lies flat. Elastic closure and a ribbon marker. Paper is fountain-pen friendly; not waterproof.",
+    "category": "stationery",
+    "price_cents": 1400,
+    "currency": "USD",
+    "stock": 80,
+    "attributes": {
+      "size": "A5",
+      "pages": 96,
+      "paper_gsm": 90,
+      "fountain_pen": true
+    },
+    "image_url": "/static/products/flo-ntb-a5.jpg"
+  }
+]

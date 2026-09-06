@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "declaration": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": ["jest", "node"],
+    "baseUrl": "../code/backend",
+    "paths": {
+      "@nestjs/*": ["node_modules/@nestjs/*"],
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["./**/*.ts", "../code/backend/src/**/*.ts", "../code/backend/prisma/**/*.ts"]
+}

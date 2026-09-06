@@ -1,0 +1,20 @@
+[
+  {
+    "customer_email": "ada@example.com",
+    "status": "paid",
+    "notes": "gift wrap the notebook",
+    "items": [
+      {"sku": "NMB-ANC-01", "quantity": 1},
+      {"sku": "FLO-NTB-A5", "quantity": 2}
+    ]
+  },
+  {
+    "customer_email": "sam@example.com",
+    "status": "placed",
+    "notes": "",
+    "items": [
+      {"sku": "HBR-TOTE-CV", "quantity": 1},
+      {"sku": "QRY-MUG-ST", "quantity": 2}
+    ]
+  }
+]

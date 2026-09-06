@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "sku": "NMB-ANC-01",
+      "title": "Nimbus ANC Headphones",
+      "description": "Closed-back wireless headphones with hybrid active noise cancelling. Restocked from the warehouse feed.",
+      "category": "audio",
+      "price": 189.0,
+      "stock": 30
+    },
+    {
+      "sku": "RID-BELL-01",
+      "title": "Ridge Brass Bike Bell",
+      "description": "Cast brass bicycle bell with a warm, single-note ping. Fits 22.2 mm bars. Not a horn.",
+      "category": "accessories",
+      "price": 16.0,
+      "stock": 25
+    },
+    {
+      "sku": "WTH-SOAP-3",
+      "title": "Weathered Cedar Soap Trio",
+      "description": "Three unscented cedarwood bars. Not for dishes. Wrapped in cotton paper.",
+      "category": "home",
+      "price": 22.0,
+      "stock": 40
+    }
+  ]
+}

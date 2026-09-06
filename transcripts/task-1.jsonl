@@ -1,0 +1,5 @@
+{"ts": "2026-09-04T01:35:00+06:00", "role": "assistant", "content": "Task 1: catalog Q&A. Ground every turn in the live product table. Escape product text. Reject history role=system. Inject FakeLLM in tests so CI never needs a key."}
+{"ts": "2026-09-04T01:40:00+06:00", "role": "tool", "name": "write", "input": {"file_path": "code/app/services/assistant.py"}, "output": "select_catalog, HTML-escaped <catalog> block, SYSTEM_PROMPT treating catalog as untrusted, run_chat"}
+{"ts": "2026-09-04T01:42:00+06:00", "role": "tool", "name": "write", "input": {"file_path": "code/app/routers/assistant.py"}, "output": "POST /api/v1/assistant/chat; 503 MODEL_UNAVAILABLE without a key"}
+{"ts": "2026-09-04T01:48:00+06:00", "role": "tool", "name": "write", "input": {"file_path": "tests/test_adversarial_assistant.py"}, "output": "prompt-injection stays in the user turn; poisoned description is escaped; unknown goods do not invent SKUs; model outage is 502"}
+{"ts": "2026-09-04T01:50:00+06:00", "role": "tool", "name": "run_terminal_command", "input": {"command": "PYTHONPATH=code python -m pytest"}, "output": "36 passed, 1 warning in 0.66s"}
